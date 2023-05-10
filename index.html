@@ -14,6 +14,7 @@
     <a-assets>
       <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" />
       <img id="bttf-logo" src="assets/img/bttf.svg" />
+      <img id="teamf" src="assets/img/teamf.png" width="1500px" height="625px">
       <a-asset-item id="delorean" src="assets/3d/delorean/scene.gltf"></a-asset-item>
       <a-asset-item id="tv" src="assets/3d/tv/scene.gltf"></a-asset-item>
       <video id="bttf-video" src="assets/video/Bttf-non.mp4" autoplay loop crossorigin="anonymous"></video>
@@ -22,6 +23,8 @@
       <a-asset-item id="storm-trooper" src="assets/storm_trooper/scene.gltf"></a-asset-item>
       <a-asset-item id="harry-potter" src="assets/harry_potter/scene.gltf"></a-asset-item>
       <a-asset-item id="golden-snitch" src="assets/golden-snitch/scene.gltf"></a-asset-item>
+      <a-asset-item id="board" src="assets/3d/board/scene.gltf"></a-asset-item>
+      <a-asset-item id="wall" src="assets/3d/wall/scene.gltf"></a-asset-item>
       <a-asset-item id="punk-tv" src="assets/punkTv/scene.gltf"></a-asset-item>
       <video id="stwi-video" src="assets/video/obivsanak-non.mp4" autoplay loop crossorigin="anonymous"></video>
       <audio id="stwi-audio" src="assets/audio/obivsanak.mp3"></audio>
@@ -47,8 +50,7 @@
            
 
 
-<a-image
-src=" #bttf-logo" material="" scale="2 1 1" position="-6.927 0.78535 7.963" geometry="" rotation="0 90 0"></a-image>
+<a-image src=" #bttf-logo" material="" scale="2 1 1" position="-6.927 0.78535 7.963" geometry="" rotation="0 90 0"></a-image>
 
         <a-entity laser-controls="hand: left"></a-entity>
         <a-entity laser-controls="hand: right"></a-entity>
@@ -82,6 +84,16 @@ src=" #bttf-logo" material="" scale="2 1 1" position="-6.927 0.78535 7.963" geom
 
         <a-entity gltf-model="#storm-trooper" position="-9.660 1.188 -12.218" rotation="0 50 0" scale="1.5 1.5 1.5">
         </a-entity>
+
+        <a-entity id="borrr" gltf-model="assets/3d/board/scene.gltf" position="-2.36527 2.01847 20.47257" rotation="" scale="0.03 0.03 0.03">
+        </a-entity>
+
+        <a-entity id="walll" gltf-model="assets/3d/wall/scene.gltf" position="-1.947 0 32.26609" rotation="0 -180 0" scale="">
+        </a-entity>
+
+        <a-image src=" #teamf" material="" scale="9 4 2" position="-2.07522 4.74203 20.27164" geometry="" rotation="0 180 0"></a-image>
+
+        <a-plane src="#groundTexture" rotation="-90 0 0" width="300" height="300" material="" geometry=""></a-plane>
 
         <a-entity gltf-model="#punk-tv" position="-7.372 2.570 -12.796" rotation="0 28.711 0" scale="1 1 1">
         </a-entity>
