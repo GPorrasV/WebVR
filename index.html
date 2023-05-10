@@ -6,6 +6,7 @@
   <meta name="description" content="Interactions - A-Frame" />
   <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+  
 </head>
 
 <body>
@@ -19,6 +20,8 @@
       <audio id="bttf-audio" src="assets/audio/bttf.mp3"></audio>
       <a-asset-item id="tide-avenger" src="assets/star_wars_tiead_avenger/scene.gltf"></a-asset-item>
       <a-asset-item id="storm-trooper" src="assets/storm_trooper/scene.gltf"></a-asset-item>
+      <a-asset-item id="harry-potter" src="assets/harry_potter/scene.gltf"></a-asset-item>
+      <a-asset-item id="golden-snitch" src="assets/golden-snitch/scene.gltf"></a-asset-item>
       <a-asset-item id="punk-tv" src="assets/punkTv/scene.gltf"></a-asset-item>
       <video id="stwi-video" src="assets/video/obivsanak.mp4" autoplay loop crossorigin="anonymous"></video>
     </a-assets>
@@ -50,6 +53,8 @@ src=" #bttf-logo" material="" scale="2 1 1" position="-0.219 0.78535 13.52119" g
         <a-light type="point" color="#FFA500" intensity="0.5"
           light="intensity: 4.1; angle: 62.36; decay: 2.91; penumbra: 1; shadowRadius: 12.96"></a-light>
 
+          <a-light type="point" color="#FFA500" intensity="0.5" light="intensity: 4.1; angle: 62.36; decay: 2.91; penumbra: 1; shadowRadius: 12.96"></a-light>
+
         <a-light type="point" color="#FFA500" intensity="0.5"
           light="type: ambient; color: #ffffff; intensity: 1; angle: 62.36; decay: 2.49"></a-light>
 
@@ -73,6 +78,19 @@ src=" #bttf-logo" material="" scale="2 1 1" position="-0.219 0.78535 13.52119" g
 
         <a-entity gltf-model="#punk-tv" position="-7.372 2.570 -7.210" rotation="0 28.711 0" scale="1 1 1">
         </a-entity>
+
+        <a-entity gltf-model="#harry-potter" position="9.540 0.322 -5.000" rotation="0.000 50.000 0.000" scale="-0.090 0.060 -0.100">
+        </a-entity>
+
+        <a-entity gltf-model="#golden-snitch" position="0 3 0" scale="0.1 0.1 0.1"
+    animation__position="property: position; to: 0 3.5 -10; dur: 1000; easing: easeInOutQuad"
+    animation__rotation="property: rotation; to: 0 1080 0; dur: 1500; easing: easeInOutCubic; loop: true"
+    animation__scale="property: scale; from: 0.1 0.1 0.1; to: 0.8 0.8 0.8; loop: true; dur: 400; easing: easeInOutSine"
+    animation__opacity="property: opacity; from: 1; to: 0; loop: true; dur: 500; easing: linear"
+    animation__color="property: material.color; from: #F44336; to: #FFD700; loop: true; dur: 800; easing: easeInOutQuad"
+></a-entity>
+
+
 
         <a-video id="stwi-video-player" src="#stwi-video" width="16" height="9" position="-7.347 2.598 -7.245"
           material="" geometry="" rotation="0 28.711 0" scale="0.099 0.099 0.099"
