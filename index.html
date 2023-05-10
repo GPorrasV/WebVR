@@ -23,7 +23,8 @@
       <a-asset-item id="harry-potter" src="assets/harry_potter/scene.gltf"></a-asset-item>
       <a-asset-item id="golden-snitch" src="assets/golden-snitch/scene.gltf"></a-asset-item>
       <a-asset-item id="punk-tv" src="assets/punkTv/scene.gltf"></a-asset-item>
-      <video id="stwi-video" src="assets/video/obivsanak.mp4" autoplay loop crossorigin="anonymous"></video>
+      <video id="stwi-video" src="assets/video/obivsanak-non.mp4" autoplay loop crossorigin="anonymous"></video>
+      <audio id="stwi-audio" src="assets/audio/obivsanak.mp3"></audio>
       <a-asset-item id="charger" src="assets/3d/dodge/doms_dodge_charger_daytona_1969_fastfurious_6.gltf"></a-asset-item>
       <a-asset-item id="skyline" src="assets/3d/skyline/nissan_skyline_r34_gt-r.gltf"></a-asset-item>
     </a-assets>
@@ -36,7 +37,8 @@
     <a-video src="#bttf-video" width="16" height="9" position="-6.804 2.04412 8.027" material="" geometry=""
       rotation="0 90 0" scale="0.13 0.13 0.13" sound="src: #bttf-audio; volume: 1; refDistance: 4; rolloffFactor: 4;">
       <a-entity sound="src: #bttf-audio; autoplay: true;""></a-entity>
-</a-video>
+    </a-video>
+
 
 <a-image
 src=" #bttf-logo" material="" scale="2 1 1" position="-6.927 0.78535 7.963" geometry="" rotation="0 90 0"></a-image>
@@ -86,6 +88,13 @@ src=" #bttf-logo" material="" scale="2 1 1" position="-6.927 0.78535 7.963" geom
         <a-entity gltf-model="#harry-potter" position="11.213 0 -11.748" rotation="0 142.378 0" scale="-0.09 0.06 -0.1">
         </a-entity>
 
+        
+        <a-video src="#stwi-video" width="16" height="9" position="-7.347 2.598 -12.902" material="" geometry=""
+        rotation="0 28.711 0" scale="0.099 0.099 0.099" sound="src: #stwi-audio; volume: 1; refDistance: 4; rolloffFactor: 4;">
+          <a-entity sound="src: #stwi-audio; autoplay: true;""></a-entity>
+        </a-video>
+               
+
         <a-entity gltf-model="#golden-snitch" position="3.327 3.500 -10.000" scale="0.1 0.1 0.1"
     animation__position="property: position; to: 0 3.5 -10; dur: 1000; easing: easeInOutQuad"
     animation__rotation="property: rotation; to: 0 1080 0; dur: 1500; easing: easeInOutCubic; loop: true"
@@ -93,10 +102,6 @@ src=" #bttf-logo" material="" scale="2 1 1" position="-6.927 0.78535 7.963" geom
     animation__opacity="property: opacity; from: 1; to: 0; loop: true; dur: 500; easing: linear"
     animation__color="property: material.color; from: #F44336; to: #FFD700; loop: true; dur: 800; easing: easeInOutQuad"
 ></a-entity>
-
-
-        <a-video id="stwi-video-player" src="#stwi-video" width="16" height="9" position="-7.347 2.598 -12.902"
-          material="" geometry="" rotation="0 28.711 0" scale="0.099 0.099 0.099"></a-video>
 
         <a-entity rotation="0 0 0">
           <a-camera wasd-controls="acceleration:200" camera rotation="30 30 0">
