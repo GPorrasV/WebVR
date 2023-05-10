@@ -24,6 +24,8 @@
       <a-asset-item id="golden-snitch" src="assets/golden-snitch/scene.gltf"></a-asset-item>
       <a-asset-item id="punk-tv" src="assets/punkTv/scene.gltf"></a-asset-item>
       <video id="stwi-video" src="assets/video/obivsanak.mp4" autoplay loop crossorigin="anonymous"></video>
+      <a-asset-item id="charger" src="assets/3d/dodge/doms_dodge_charger_daytona_1969_fastfurious_6.gltf"></a-asset-item>
+      <a-asset-item id="skyline" src="assets/3d/skyline/nissan_skyline_r34_gt-r.gltf"></a-asset-item>
     </a-assets>
 
     <a-text value="Welcome to your new room!" position="-1.5 4 -5" color="#000" scale="1.5 1.5 1.5"></a-text>
@@ -79,6 +81,11 @@ src=" #bttf-logo" material="" scale="2 1 1" position="-0.219 0.78535 13.52119" g
         <a-entity gltf-model="#punk-tv" position="-7.372 2.570 -7.210" rotation="0 28.711 0" scale="1 1 1">
         </a-entity>
 
+        <a-entity gltf-model="#charger" position="5 0 -3" scale="2 2 2"
+        animation="property: rotation; to: 0 -50 0; dur: 5000 ; autoplay: true"></a-entity>
+
+      <a-entity gltf-model="#skyline" position="1 -0.3 -12" scale="2.3 2.3 2.3"
+        animation="property: rotation; to: 0 -50 0; dur: 5000 ; autoplay: true"></a-entity>
         <a-entity gltf-model="#harry-potter" position="9.540 0.322 -5.000" rotation="0.000 50.000 0.000" scale="-0.090 0.060 -0.100">
         </a-entity>
 
@@ -90,12 +97,8 @@ src=" #bttf-logo" material="" scale="2 1 1" position="-0.219 0.78535 13.52119" g
     animation__color="property: material.color; from: #F44336; to: #FFD700; loop: true; dur: 800; easing: easeInOutQuad"
 ></a-entity>
 
-
-
         <a-video id="stwi-video-player" src="#stwi-video" width="16" height="9" position="-7.347 2.598 -7.245"
-          material="" geometry="" rotation="0 28.711 0" scale="0.099 0.099 0.099"
-          event-set__mouseenter="_target: #stwi-video-player; visible: true; play: true"
-          event-set__mouseleave="_target: #stwi-video-player; visible: false; pause: true; currentTime: 0"></a-video>
+          material="" geometry="" rotation="0 28.711 0" scale="0.099 0.099 0.099"></a-video>
 
         <a-entity rotation="0 0 0">
           <a-camera wasd-controls="acceleration:200" camera rotation="30 30 0">
