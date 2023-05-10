@@ -28,22 +28,18 @@
       <a-asset-item id="skyline" src="assets/3d/skyline/nissan_skyline_r34_gt-r.gltf"></a-asset-item>
     </a-assets>
 
-    <a-text value="Welcome to your new room!" position="-1.5 4 -5" color="#000" scale="1.5 1.5 1.5"></a-text>
-    <a-text value="Apply a new color on walls by hovering over the colored cubes." position="-1.5 3.5 -5"
-      color="#000"></a-text>
-
-    <a-entity gltf-model="#delorean" position="-0.67 -0.6 13.39" scale="0.5 0.5 0.5"
+    <a-entity gltf-model="#delorean" position="-7.255 -0.6 7.953" scale="0.5 0.5 0.5"
       animation="property: rotation; to: 0 360 0; loop: true; dur: 5000 ; autoplay: true"></a-entity>
 
-    <a-entity gltf-model="#tv" glow position="-0.67 0 13.39" scale="1.4 1.4 1.4"></a-entity>
+    <a-entity gltf-model="#tv" glow position="-7.255 0 7.953" scale="1.4 1.4 1.4"></a-entity>
 
-    <a-video src="#bttf-video" width="16" height="9" position="-0.22492 2.04412 13.47852" material="" geometry=""
+    <a-video src="#bttf-video" width="16" height="9" position="-6.804 2.04412 8.027" material="" geometry=""
       rotation="0 90 0" scale="0.13 0.13 0.13" sound="src: #bttf-audio; volume: 1; refDistance: 4; rolloffFactor: 4;">
       <a-entity sound="src: #bttf-audio; autoplay: true;""></a-entity>
 </a-video>
 
 <a-image
-src=" #bttf-logo" material="" scale="2 1 1" position="-0.219 0.78535 13.52119" geometry="" rotation="0 90 0"></a-image>
+src=" #bttf-logo" material="" scale="2 1 1" position="-6.927 0.78535 7.963" geometry="" rotation="0 90 0"></a-image>
 
         <a-entity laser-controls="hand: left"></a-entity>
         <a-entity laser-controls="hand: right"></a-entity>
@@ -61,35 +57,36 @@ src=" #bttf-logo" material="" scale="2 1 1" position="-0.219 0.78535 13.52119" g
           light="type: ambient; color: #ffffff; intensity: 1; angle: 62.36; decay: 2.49"></a-light>
 
         <!--Texto del Tie Avenger-->
-        <a-entity id="TieAvenger" visible="false" position="-8 2 1" rotation="0 90 0" scale="1.5 1.5 1.5">
-          <a-text value="Tie Avenger" position="0 1 0" color="#ffbc0f" scale="1.5 1.5 1.5"
+        <a-entity id="TieAvenger" visible="false" position="-5.920 2.000 0.418" rotation="0 90 0" scale="1.5 1.5 1.5">
+          <a-text value="Tie Avenger" position="5.012 1 -3.908" color="#ffbc0f" scale="1.5 1.5 1.5"
             text="align: center"></a-text>
           <a-text value="El caza estelar TIE/ad , conocido simplemente como TIE Advanced , TIE/Ad  o T/A , fue la culminación de una serie de diseños de cazas estelares explorados por primera vez con de Darth Vader el TIE Advanced x1 . Para evitar confusiones con la nave personal de Lord Vader, se le conocía mejor por su apodo TIE Avenger.
-" position="" color="#ffbc0f" text="anchor: center;"></a-text>
+" position="5.012 0 -3.814" color="#ffbc0f" text="anchor: center;"></a-text>
         </a-entity>
 
 
-        <a-entity gltf-model="#tide-avenger" position="-10 6 -5" rotation="10 60 30" scale="0.75 0.75 0.75"
+        <a-entity gltf-model="#tide-avenger" position="-12.696 6.649 -12.222" rotation="10 60 30" scale="0.75 0.75 0.75"
           color="#F44336" event-set__mouseenter="_target: #TieAvenger; visible: true"
           event-set__mouseleave="_target: #TieAvenger; visible: false"
           animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear">
         </a-entity>
 
-        <a-entity gltf-model="#storm-trooper" position="-10 1.5 -5" rotation="0 50 0" scale="1.5 1.5 1.5">
+        <a-entity gltf-model="#storm-trooper" position="-9.660 1.188 -12.218" rotation="0 50 0" scale="1.5 1.5 1.5">
         </a-entity>
 
-        <a-entity gltf-model="#punk-tv" position="-7.372 2.570 -7.210" rotation="0 28.711 0" scale="1 1 1">
+        <a-entity gltf-model="#punk-tv" position="-7.372 2.570 -12.796" rotation="0 28.711 0" scale="1 1 1">
         </a-entity>
 
-        <a-entity gltf-model="#charger" position="5 0 -3" scale="2 2 2"
-        animation="property: rotation; to: 0 -50 0; dur: 5000 ; autoplay: true"></a-entity>
+        <a-entity gltf-model="#charger" position="12.393 0 14.032" scale="2 2 2"
+        animation="property: rotation; to: 0 -75.740 0; dur: 5000 ; autoplay: true"></a-entity>
 
-      <a-entity gltf-model="#skyline" position="1 -0.3 -12" scale="2.3 2.3 2.3"
-        animation="property: rotation; to: 0 -50 0; dur: 5000 ; autoplay: true"></a-entity>
-        <a-entity gltf-model="#harry-potter" position="9.540 0.322 -5.000" rotation="0.000 50.000 0.000" scale="-0.090 0.060 -0.100">
+      <a-entity gltf-model="#skyline" position="6.389 -0.610 3.070" scale="2.3 2.3 2.3"
+        animation="property: rotation; to: 0 -81.841 0; dur: 5000 ; autoplay: true"></a-entity>
+        
+        <a-entity gltf-model="#harry-potter" position="11.213 0 -11.748" rotation="0 142.378 0" scale="-0.09 0.06 -0.1">
         </a-entity>
 
-        <a-entity gltf-model="#golden-snitch" position="0 3 0" scale="0.1 0.1 0.1"
+        <a-entity gltf-model="#golden-snitch" position="3.327 3.500 -10.000" scale="0.1 0.1 0.1"
     animation__position="property: position; to: 0 3.5 -10; dur: 1000; easing: easeInOutQuad"
     animation__rotation="property: rotation; to: 0 1080 0; dur: 1500; easing: easeInOutCubic; loop: true"
     animation__scale="property: scale; from: 0.1 0.1 0.1; to: 0.8 0.8 0.8; loop: true; dur: 400; easing: easeInOutSine"
@@ -97,7 +94,8 @@ src=" #bttf-logo" material="" scale="2 1 1" position="-0.219 0.78535 13.52119" g
     animation__color="property: material.color; from: #F44336; to: #FFD700; loop: true; dur: 800; easing: easeInOutQuad"
 ></a-entity>
 
-        <a-video id="stwi-video-player" src="#stwi-video" width="16" height="9" position="-7.347 2.598 -7.245"
+
+        <a-video id="stwi-video-player" src="#stwi-video" width="16" height="9" position="-7.347 2.598 -12.902"
           material="" geometry="" rotation="0 28.711 0" scale="0.099 0.099 0.099"></a-video>
 
         <a-entity rotation="0 0 0">
