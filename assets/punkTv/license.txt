@@ -1,0 +1,11 @@
+Model Information:
+* title:	Steampunk TV
+* source:	https://sketchfab.com/3d-models/steampunk-tv-07736e3732bc458cb273ff9a4f20628e
+* author:	FinOrW (https://sketchfab.com/Fin.Or.W)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Steampunk TV" (https://sketchfab.com/3d-models/steampunk-tv-07736e3732bc458cb273ff9a4f20628e) by FinOrW (https://sketchfab.com/Fin.Or.W) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

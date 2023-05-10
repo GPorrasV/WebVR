@@ -1,114 +1,90 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Basic Interactions - A-Frame</title>
-    <meta name="description" content="Interactions - A-Frame" />
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <a-assets>
-        <img
-          id="groundTexture"
-          src="https://cdn.aframe.io/a-painter/images/floor.jpg"
-        />
-        <img id="bttf-logo" src="assets/img/bttf.svg" />
-        <a-asset-item
-          id="delorean"
-          src="assets/3d/delorean/scene.gltf"
-        ></a-asset-item>
-        <a-asset-item id="tv" src="assets/3d/tv/scene.gltf"></a-asset-item>
-        <video
-          id="bttf-video"
-          src="assets/video/Bttf-non.mp4"
-          autoplay
-          loop
-          crossorigin="anonymous"
-        ></video>
-        <audio id="bttf-audio" src="assets/audio/bttf.mp3"></audio>
-      </a-assets>
 
-      <a-text
-        value="Welcome to your new room!"
-        position="-1.5 4 -5"
-        color="#000"
-        scale="1.5 1.5 1.5"
-      ></a-text>
-      <a-text
-        value="Apply a new color on walls by hovering over the colored cubes."
-        position="-1.5 3.5 -5"
-        color="#000"
-      ></a-text>
+<head>
+  <title>Basic Interactions - A-Frame</title>
+  <meta name="description" content="Interactions - A-Frame" />
+  <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-event-set-component@5.0.0/dist/aframe-event-set-component.min.js"></script>
+</head>
 
-      <a-entity
-        gltf-model="#delorean"
-        position="-0.67 -0.6 13.39"
-        scale="0.5 0.5 0.5"
-        animation="property: rotation; to: 0 360 0; loop: true; dur: 5000 ; autoplay: true"
-      ></a-entity>
+<body>
+  <a-scene>
+    <a-assets>
+      <img id="groundTexture" src="https://cdn.aframe.io/a-painter/images/floor.jpg" />
+      <img id="bttf-logo" src="assets/img/bttf.svg" />
+      <a-asset-item id="delorean" src="assets/3d/delorean/scene.gltf"></a-asset-item>
+      <a-asset-item id="tv" src="assets/3d/tv/scene.gltf"></a-asset-item>
+      <video id="bttf-video" src="assets/video/Bttf-non.mp4" autoplay loop crossorigin="anonymous"></video>
+      <audio id="bttf-audio" src="assets/audio/bttf.mp3"></audio>
+      <a-asset-item id="tide-avenger" src="assets/star_wars_tiead_avenger/scene.gltf"></a-asset-item>
+      <a-asset-item id="storm-trooper" src="assets/storm_trooper/scene.gltf"></a-asset-item>
+      <a-asset-item id="punk-tv" src="assets/punkTv/scene.gltf"></a-asset-item>
+      <video id="stwi-video" src="assets/video/obivsanak.mp4" autoplay loop crossorigin="anonymous"></video>
+    </a-assets>
 
-      <a-entity
-        gltf-model="#tv"
-        glow
-        position="-0.67 0 13.39"
-        scale="1.4 1.4 1.4"
-      ></a-entity>
+    <a-text value="Welcome to your new room!" position="-1.5 4 -5" color="#000" scale="1.5 1.5 1.5"></a-text>
+    <a-text value="Apply a new color on walls by hovering over the colored cubes." position="-1.5 3.5 -5"
+      color="#000"></a-text>
 
-      <a-video
-        src="#bttf-video"
-        width="16"
-        height="9"
-        position="-0.22492 2.04412 13.47852"
-        material=""
-        geometry=""
-        rotation="0 90 0"
-        scale="0.13 0.13 0.13"
-        sound="src: #bttf-audio; volume: 1; refDistance: 4; rolloffFactor: 4;"
-      >
-        <a-entity sound="src: #bttf-audio; autoplay: true;""></a-entity>
-      </a-video>
+    <a-entity gltf-model="#delorean" position="-0.67 -0.6 13.39" scale="0.5 0.5 0.5"
+      animation="property: rotation; to: 0 360 0; loop: true; dur: 5000 ; autoplay: true"></a-entity>
 
-      <a-image
-        src="#bttf-logo"
-        material=""
-        scale="2 1 1"
-        position="-0.219 0.78535 13.52119"
-        geometry=""
-        rotation="0 90 0"
-      ></a-image>
+    <a-entity gltf-model="#tv" glow position="-0.67 0 13.39" scale="1.4 1.4 1.4"></a-entity>
 
-      <a-entity laser-controls="hand: left"></a-entity>
-      <a-entity laser-controls="hand: right"></a-entity>
+    <a-video src="#bttf-video" width="16" height="9" position="-0.22492 2.04412 13.47852" material="" geometry=""
+      rotation="0 90 0" scale="0.13 0.13 0.13" sound="src: #bttf-audio; volume: 1; refDistance: 4; rolloffFactor: 4;">
+      <a-entity sound="src: #bttf-audio; autoplay: true;""></a-entity>
+</a-video>
 
-      <a-sky id="bg" color="#fff"></a-sky>
+<a-image
+src=" #bttf-logo" material="" scale="2 1 1" position="-0.219 0.78535 13.52119" geometry="" rotation="0 90 0"></a-image>
 
-      <a-plane
-        src="#groundTexture"
-        rotation="-90 0 0"
-        width="300"
-        height="300"
-      ></a-plane>
+        <a-entity laser-controls="hand: left"></a-entity>
+        <a-entity laser-controls="hand: right"></a-entity>
 
-      <a-light
-        type="point"
-        color="#FFA500"
-        intensity="0.5"
-        light="intensity: 4.1; angle: 62.36; decay: 2.91; penumbra: 1; shadowRadius: 12.96"
-      ></a-light>
+        <a-sky id="bg" color="#fff"></a-sky>
 
-      <a-light
-        type="point"
-        color="#FFA500"
-        intensity="0.5"
-        light="type: ambient; color: #ffffff; intensity: 1; angle: 62.36; decay: 2.49"
-      ></a-light>
+        <a-plane src="#groundTexture" rotation="-90 0 0" width="300" height="300"></a-plane>
 
-      <a-entity rotation="0 0 0">
-        <a-camera wasd-controls="acceleration:200" camera rotation="30 30 0">
-          <a-cursor color="#fff"></a-cursor>
-        </a-camera>
-      </a-entity>
-    </a-scene>
-  </body>
+        <a-light type="point" color="#FFA500" intensity="0.5"
+          light="intensity: 4.1; angle: 62.36; decay: 2.91; penumbra: 1; shadowRadius: 12.96"></a-light>
+
+        <a-light type="point" color="#FFA500" intensity="0.5"
+          light="type: ambient; color: #ffffff; intensity: 1; angle: 62.36; decay: 2.49"></a-light>
+
+        <!--Texto del Tie Avenger-->
+        <a-entity id="TieAvenger" visible="false" position="-8 2 1" rotation="0 90 0" scale="1.5 1.5 1.5">
+          <a-text value="Tie Avenger" position="0 1 0" color="#ffbc0f" scale="1.5 1.5 1.5"
+            text="align: center"></a-text>
+          <a-text value="El caza estelar TIE/ad , conocido simplemente como TIE Advanced , TIE/Ad  o T/A , fue la culminación de una serie de diseños de cazas estelares explorados por primera vez con de Darth Vader el TIE Advanced x1 . Para evitar confusiones con la nave personal de Lord Vader, se le conocía mejor por su apodo TIE Avenger.
+" position="" color="#ffbc0f" text="anchor: center;"></a-text>
+        </a-entity>
+
+
+        <a-entity gltf-model="#tide-avenger" position="-10 6 -5" rotation="10 60 30" scale="0.75 0.75 0.75"
+          color="#F44336" event-set__mouseenter="_target: #TieAvenger; visible: true"
+          event-set__mouseleave="_target: #TieAvenger; visible: false"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; easing: linear">
+        </a-entity>
+
+        <a-entity gltf-model="#storm-trooper" position="-10 1.5 -5" rotation="0 50 0" scale="1.5 1.5 1.5">
+        </a-entity>
+
+        <a-entity gltf-model="#punk-tv" position="-7.372 2.570 -7.210" rotation="0 28.711 0" scale="1 1 1">
+        </a-entity>
+
+        <a-video id="stwi-video-player" src="#stwi-video" width="16" height="9" position="-7.347 2.598 -7.245"
+          material="" geometry="" rotation="0 28.711 0" scale="0.099 0.099 0.099"
+          event-set__mouseenter="_target: #stwi-video-player; visible: true; play: true"
+          event-set__mouseleave="_target: #stwi-video-player; visible: false; pause: true; currentTime: 0"></a-video>
+
+        <a-entity rotation="0 0 0">
+          <a-camera wasd-controls="acceleration:200" camera rotation="30 30 0">
+            <a-cursor color="#fff"></a-cursor>
+          </a-camera>
+        </a-entity>
+  </a-scene>
+</body>
+
 </html>
